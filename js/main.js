@@ -11,6 +11,7 @@ var objBanner = document.querySelector(".principal-banner img");
 
 // grupo de imagens (Array) 
 var imgBanner = [
+    "estadio.jpg",
     "bola.jpg",
     "grama.jpg"
 ];
@@ -18,7 +19,7 @@ var imgBanner = [
 // início do texto do banner
 var frases = [
     "Melhores Momentos Do fim de Semana",
-    "Bola é redendo ou quadrada?",
+    "Bola é redonda ou quadrada?",
     "A Grama que você nao corta é de quem"
 ];
 
@@ -45,7 +46,7 @@ function trocaImagem() {
 }
 
 // criar um intervalo de tempo para a troca de imagem
-var trBanner = setInterval(trocaImagem, 1500);
+var trBanner = setInterval(trocaImagem, 1600);
 
 // interrompe a animação do banner
 function paraBanner() {
@@ -56,7 +57,38 @@ function paraBanner() {
 // reinicia a animação do banner
 function voltaBanner() {
     // recria o intervalo com setIntervalo
-    trBanner = setInterval(trocaImagem, 1500);
+    trBanner = setInterval(trocaImagem, 1600);
 }
 
-// 
+// avança uma imagem pelo botão
+function proximaImg() {
+    // estrutura de condição para quando chegar na ultima imagem do meu array ele calcula menos -1
+    if (imgAtual === (imgBanner.length -1) ) {
+        imgAtual = 0;
+    }
+    else {
+        imgAtual += 1;
+    }
+
+    var imagem = dirImg + "/" + imgBanner[imgAtual];
+    objBanner.src = imagem;
+    
+    // Muda o texto quando troca de imagem
+    objFrase.innerHTML = "<p>" + frases[imgAtual] + "</p>";
+}
+
+// retrocede  uma imagem pelo botão
+function voltaImg() {
+    if (imgAtual === 0) {
+        imgAtual = imgBanner.length - 1;
+    }
+    else {
+        imgAtual -= 1 ;
+    }
+
+    var imagem = dirImg + "/" + imgBanner[imgAtual];
+    objBanner.src = imagem;
+    
+    // Muda o texto quando troca de imagem
+    objFrase.innerHTML = "<p>" + frases[imgAtual] + "</p>";
+}
