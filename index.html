@@ -43,11 +43,22 @@
         <section>
         <div class="row" style="margin-top: 15px;">
             <div class="col principal-grid">
+
                 <!-- imagem do banner-->
-                <div class="principal-banner">
-                    <div class="navega" id="anterior"> < </div>
-                    <div class="navega direita" id="proximo"> > </div>
-                        <img src="./img/22432.jpg" alt="banner site">
+                <div class="principal-banner" onmouseover="paraBanner()" onmouseout="voltaBanner()">
+
+                    <!--- seta esquerda-->
+                    <div class="navega" id="anterior">
+                        <img src="./img/esquerda.png" alt="seta-esquerda">
+                    </div>
+                    
+                    <!-- seta direita -->
+                    <div class="navega direita" id="proximo">
+                        <img src="./img/direita.png" alt="seta-direta"> 
+                    </div>
+                        
+                    <!-- imagem do banner -->
+                    <img src="./img/estadio.jpg" alt="banner-site">
 
                     <!-- texto do banner-->
                     <div id="linha-banner" class="linha-banner">
@@ -55,6 +66,7 @@
                             Melhores Momentos Do fim de Semana
                         </p>
                     </div>
+
                 </div>
             </div>
 
