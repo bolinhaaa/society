@@ -1,0 +1,63 @@
+.principal-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.principal-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* inicio banner */
+.principal-banner .linha-banner {
+    position: absolute;
+    background-color: #ff0;
+    bottom: 40px;
+    height: 30px;
+    width: 100%;
+    box-shadow: 0 3px 5px 3px #ff0;
+    opacity: .6;
+    display: flex;
+    align-items: center;
+}
+
+    .principal-banner .linha-banner:hover {
+        box-shadow: 0 3px 5px 4px #ffc600;
+        opacity: .8;
+    }
+
+        .principal-banner .linha-banner {
+            color: #000000;
+            font-size: 1.6vw;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+@media (max-width: 768px) {
+    .principal-banner .linha-banner {
+        font-size: 4vw;
+    }
+}
+
+/* seta direita e esquerda */
+.principal-banner .navega {
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    opacity: 0.5;
+}
+
+.principal-banner .direita {
+    right: 0;
+}
+
+.principal-banner .navega:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* fim banner */

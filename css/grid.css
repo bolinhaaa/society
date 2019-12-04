@@ -1,0 +1,60 @@
+/*container*/
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1170px ) {
+    .container {
+        max-width: 1170px;
+        padding: 0px;
+    }
+}
+
+/*linha*/
+.row {
+   margin-left: -5px;
+   margin-right: -5px;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/*colunas*/
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+
+    *zoom: 1;
+    *display: inline;
+}
+
+@media (min-width: 768px ) {
+    .principal-grid {
+        width: 60%;
+    }
+
+    .jogos-grid {
+        width: 40%;
+        border:1px solid blue;
+    }
+
+    .rodape-grid {
+        border: 1px solid #333333;
+    }
+}
+
