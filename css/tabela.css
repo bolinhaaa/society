@@ -1,0 +1,351 @@
+/* tabela */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+#classificacao__wrapper {
+    align-items: flex-start;
+    /* animation: fadeInFromNone 0.125s linear; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 41px;
+    opacity: 1 !important;
+}
+
+.tabela* {
+    vertical-align: middle;
+}
+
+.tabela {
+    font-size: 16px;
+}
+
+.classificacao__pontos-corridos {
+    display: flex;
+}
+
+.navegacao-fase + .tabela__futebol:first-of-type {
+    margin-top: 20px;
+}
+
+    .tabela__futebol--listinhas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .tabela__futebol--listinhas .tabela {
+            flex-grow: 2;
+            flex-basis: 60%;
+            width: 60%;
+        }
+
+            .tabela__futebol--listinhas header {
+                flex-basis: 100%;
+            }
+
+                .tabela__futebol {
+                    margin-bottom: 20px;
+                }
+
+.classificacao__header--titulo {
+    color: #111;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.625em;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    line-height: 1.75em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* tabela equipes */
+.tabela__equipes {
+    background-color: #fcfcfc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-size: 17px;
+    min-width: 100px;
+    width: 250px;
+}
+
+.tabela__col--posicao {
+    width: 25px;
+}
+
+.tabela__col--variacao {
+    width: 38px;
+}
+
+.tabela__head {
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 0 solid #999;
+    border-top: 1px solid #ddd;
+    color: #999;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    height: 40px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.tabela__head--coluna {
+    padding: 0 21px;
+    white-space: nowrap;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    font-size: 11px;
+}
+
+.tabela__head--classificacao {
+    text-align: left;
+    padding: 0 !important;
+    flex-grow: 2;
+    flex-basis: 50%;
+    margin-right: 15px;
+}
+
+.classificao__tabela--linha {
+    text-align: center;
+    border-right: 0px solid #999;
+    border-bottom: solid 1px #ddd;
+    height: 55px;
+}
+
+    .classificacao__equipes--posicao {
+        color: #999;
+        text-align: left;
+        letter-spacing: -2px;
+        line-height: 22px;
+    }
+    
+        .classificacao__equipes {
+            letter-spacing: -1px;
+            font-family: "Century Gothic",sans-serif;
+            font-variant: normal;
+            font-weight: normal;
+        }
+
+            .classificacao__equipes--time {
+                text-align: left;
+                vertical-align: middle;
+                line-height: 22px;
+            }
+
+                .classificacao__equipes--nome {
+                    display: block;
+                    overflow: hidden;
+                    word-break: inherit;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+
+                    .classificacao__equipes--sigla {
+                        display: none;
+                    }
+
+                        .classificacao__equipes--variacao {
+                            color: #bebebe;
+                            font-size: 11px;
+                            padding: 3px 0 0 8px;
+                            text-align: start;
+                        }
+                            
+                            .classificacao__icone {
+                                background-size: 17px 50px;
+                                background: url("https://s.glbimg.com/es/ge/static/live/widget_classificacao_responsivo/img/sprite-tabela-icones.svg?5dfb76dc3509") no-repeat left 1px;
+                                background-color: rgba(0, 0, 0, 0);
+                                background-position-y: 1px;
+                                background-image: url("https://s.glbimg.com/es/ge/static/live/widget_classificacao_responsivo/img/sprite-tabela-icones.svg?5dfb76dc3509");
+                                display: inline-block;
+                                height: 10px;
+                                background-position-y: 2px;
+                                margin-left: 6px;
+                                overflow: hidden;
+                                width: 8px;
+                            }
+
+                                .classificacao__icone--neutra {
+                                    background-image: none;
+                                    background-color: #ccc;
+                                    height: 7px;
+                                    width: 7px;
+                                }
+
+/* ------------------------------------------------------- NAV ----------------------------------------------------- */
+.navegacao-fase__setas-esquerda svg {
+    transform: rotate(180deg);
+}
+
+    .navegacao-fase__setas svg {
+        height: .7em;
+        stroke-width: 10px;
+    }
+
+        .navegacao-fase__setas {
+            color: #ccc;
+            flex-grow: 1;
+            text-align: left;
+            font-size: 1.4em;
+            fill: #ccc;
+            align-self: center;
+        }
+
+            .navegacao-fase__fase {
+                flex-grow: 2;
+            }
+
+                .navegacao-fase {
+                    border-bottom: 1px solid silver;
+                    color: #111;
+                    display: flex;
+                    font-family: "Century Gothic",sans-serif;
+                    font-size: 1.5em;
+                    font-style: normal;
+                    font-weight: 700;
+                    justify-content: center;
+                    line-height: 2.4375em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+
+                    .navegacao-fase__setas:last-of-type {
+                        text-align: right;
+                    }
+
+                        .navegacao-fase__setas-ativa {
+                            cursor: pointer;
+                            stroke: #3b9c00;
+                        }
+
+/* ------------------------------------------ TABELA DOS PONTOS ---------------------------------------------------- */
+.tabela__pontos {
+    font-size: 14px;
+    width: calc(100%-250px);
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    overflow-x: scroll;
+}
+
+    .classificacao__pontos:nth-child(2n+1) {
+        background-color: #f5f5f5;
+    }
+
+        .classificacao__pontos--pontos {
+            font-weight: 700;
+        }
+
+            .classificacao__pontos {
+                background-color: #fcfcfc;
+                line-height: 14px;
+                font-family: "Century Gothic",sans-serif;
+            }
+
+                .classificacao__ultimos__jogos--v {
+                    background-color: #51a81e;
+                }
+                    .classificacao__ultimos__jogos--e {
+                        background-color: #ccc;
+                    }
+
+                        .classificacao__ultimos__jogos--d {
+                            background-color: #f00;
+                        }
+
+                            .classificacao__ultimos__jogos {
+                                border-radius: 50%;
+                                display: inline-block;
+                                height: 7px;
+                                margin-left: 4px;
+                                overflow: hidden;
+                                width: 7px;
+                            }
+
+
+/* ------------------------------------------ TABELA DOS JOGOS ---------------------------------------------------- */
+.tabela__listinhas {
+    border-left: 1px solid #ccc;
+    flex-grow: 1;
+    width: 30%;
+    flex-basis: 30%;
+}
+
+    .tabela__lista--jogos {
+        flex-grow: 1;
+        order: 2;
+        width: 30%;
+    }
+
+        .lista-jogos__header--titulo-listinha {
+            display: none;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+            .lista-jogos__header--titulo {
+                color: #111;
+                font-family: "Century Gothic", sans-serif;
+                font-size: 1.625em;
+                font-weight: bold;
+                letter-spacing: +0.04em;
+                line-height: 1.75em;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+.lista-jogos__navegacao {
+    border-bottom: 1px solid #;
+    border-top: 1px solid green;
+    color: #111;
+    display: flex;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 2.4375em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .lista-jogos__navegacao--setas-ativa {
+        cursor: pointer;
+        stroke: #3b9c00;
+    }
+
+        .lista-jogos__navegacao--setas {
+            color: #ccc;
+            flex-grow: 1;
+            text-align: left;
+            font-size: 1.5em;
+            height: 1.5em;
+            fill: #ccc;
+        }
+
+            .lista-jogos__navegacao--setas-esquerda svg {
+                transform: rotate(180deg);
+            }
+
+                .lista-jogos__navegacao--setas svg {
+                    height: .7em;
+                    stroke-width: 10px;
+                }
+
+
+.lista-jogos__navegacao--rodada {
+    flex-grow: 2;
+}
+
+    .lista-jogos__navegacao--setas:last-of-type {
+        text-align: right;
+    }

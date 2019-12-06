@@ -12,15 +12,15 @@ var objBanner = document.querySelector(".principal-banner img");
 // grupo de imagens (Array) 
 var imgBanner = [
     "estadio.jpg",
-    "bola.jpg",
-    "grama.jpg"
+    "uniaoxtocos.jpg",
+    "uniaoxantidop.jpg"
 ];
 
 // início do texto do banner
 var frases = [
     "Melhores Momentos Do fim de Semana",
-    "Bola é redonda ou quadrada?",
-    "A Grama que você nao corta é de quem"
+    "União Fc x Vila dos Tocos Fc",
+    "União Fc x Antidoping Fc"
 ];
 
 var objFrases = document.getElementById("linha-banner");
