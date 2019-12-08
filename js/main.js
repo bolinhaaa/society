@@ -1,3 +1,11 @@
+// inicio menu
+$(document).ready(function(){
+    $('.menu').click(function() {
+        $('ul').toggleClass('active');
+    })
+})
+// fim menu
+
 // banner da página index
 
 // contador de imagens

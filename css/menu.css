@@ -24,7 +24,7 @@ body {
 
             @media (min-width: 768px ) {
                 .titulo-site {
-                    font-size: 3vw;
+                    font-size: 2vw;
                 }
             }
 
@@ -32,7 +32,7 @@ body {
 .nav {
     position: relative;
     display: inline-block;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-weight: 700;
     width: 100%;
     text-align: center;

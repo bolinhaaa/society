@@ -17,6 +17,9 @@
 <link rel="stylesheet" href="css/menu.css"/>
 <link rel="stylesheet" href="css/estilo.css"/>
 <link rel="stylesheet" href="css/tabela.css">
+
+<link rel="stylesheet" type="text/css" href="./css/menuteste.css" media="all">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>     
     <div class="container">
@@ -24,9 +27,9 @@
             <a href="http://www.globo.com" class="logo" target="_blank" title="Society Cravinhos 2019">
                 <img src="./img/pngtube.com-soccer-ball-png-image-939069.png" width="80px" height="auto" alt="Society Cravinhos 2019">
             </a>
-
+        
             <h1 class="titulo-site">Society Cravinhos 2019</h1>
-
+        
             <!-- Início do Menu -->
             <nav class="nav">
                 <ul class="nav-list">
@@ -59,7 +62,8 @@
                         </svg>
                     </span>
                  </nav>
-
+                
+                <!-- GRUPO A-->
                 <article class="tabela__futebol tabela__futebol--listinhas" itemtype="http://schema.org/SportsEvent">
                     <header>
                         <h2 class="classificacao__header--titulo">GRUPO A</h2>
@@ -116,8 +120,8 @@
                                         <td class="classificacao__equipes classificacao__equipes--posicao"> 3 </td>
 
                                         <td class="classificacao__equipes classificacao__equipes--time" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
-                                            <strong class="classificacao__equipes classificacao__equipes--nome"> Vila Dos Tocos </strong>
-                                            <span class="classificacao__equipes classificacao__equipes--sigla">VIL</span>
+                                            <strong class="classificacao__equipes classificacao__equipes--nome"> Athletico City </strong>
+                                            <span class="classificacao__equipes classificacao__equipes--sigla">ATC</span>
                                         </td>
 
                                         <td class="classificacao__equipes classificacao__equipes--variacao">
@@ -221,7 +225,7 @@
                             </header>
 
                             <nav class="lista-jogos__navegacao">
-                                <span class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-esquerda lista-jogos__navegacao--setas-ativa">
+                                <span class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-esquerda">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
                                         <path d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"></path>
                                     </svg>
@@ -237,6 +241,90 @@
                                     </svg>
                                 </span>
                             </nav>
+
+                            <ul class="lista-jogos">
+                                <li class="lista-jogos__jogo">
+                                    <div class="jogo theme" itemscope="" itemtype="http://schema.org/SportsEvent">
+                                        <span class="jogo__transmissao--link">
+                                            <div>
+                                                <div class="jogo__informacoes">
+                                                    <span class="jogo__informacoes--data">DOM 08/12/2019</span>
+                                                    <span class="jogo__informacoes--local">Arena Marola</span>
+                                                    <span class="jogo__informacoes--hora">10:00</span>
+                                                </div>
+                                                <div class="placar">
+                                                    <!-- Escudo Mandante-->
+                                                    <div class="placar__equipes placar__equipes--mandante" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
+                                                        <span class="esquipes__sigla" title="Racing FC">RAC</span>
+                                                        <img class="equipes__escudo equipes__escudo--mandante" src="./img/racing.jpeg" itemprop="image" alt="Racing Fc" >
+                                                    </div>
+
+                                                    <!-- Placar do Jogo -->
+                                                    <div class="placar-box">
+                                                        <span class="placar-box__valor placar__equipes--mandante">13</span>
+                                                        <span class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"></span>
+                                                        <span class="placar-box__versus">
+                                                            <svg id="scoreboard-vs-icon" viewBox="0 0 100 100" width="100%" heigth="100%">
+                                                                    <line x1="-3" x2="100" y1="1" y2="100" stroke="#555" stroke-width="5"></line>
+                                                                    <line x1="-3" x2="100" y1="100" y2="1" stroke="#555" stroke-width="5"></line>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"></span>
+                                                        <span class="placar-box__valor placar__equipes--visitante">2</span>
+                                                    </div>
+
+                                                    <!-- Escudo Visitante -->
+                                                    <div class="placar__equipes placar__equipes--visitante" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
+                                                        <img class="equipes__escudo equipes__escudo--visitante" src="https://s.glbimg.com/es/sde/f/organizacoes/2019/09/09/Athletico-PR.svg" itemprop="image" alt="Athletico City">
+                                                        <span class="equipes__sigla">ACT</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="lista-jogos__jogo">
+                                        <div class="jogo theme" itemscope="" itemtype="http://schema.org/SportsEvent">
+                                            <span class="jogo__transmissao--link">
+                                                <div>
+                                                    <div class="jogo__informacoes">
+                                                        <span class="jogo__informacoes--data">DOM 08/12/2019</span>
+                                                        <span class="jogo__informacoes--local">Arena Marola</span>
+                                                        <span class="jogo__informacoes--hora">10:00</span>
+                                                    </div>
+                                                    <div class="placar">
+                                                        <!-- Escudo Mandante-->
+                                                        <div class="placar__equipes placar__equipes--mandante" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
+                                                            <span class="esquipes__sigla" title="Racing FC">RAC</span>
+                                                            <img class="equipes__escudo equipes__escudo--mandante" src="./img/racing.jpeg" itemprop="image" alt="Racing Fc" >
+                                                        </div>
+    
+                                                        <!-- Placar do Jogo -->
+                                                        <div class="placar-box">
+                                                            <span class="placar-box__valor placar__equipes--mandante">13</span>
+                                                            <span class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"></span>
+                                                            <span class="placar-box__versus">
+                                                                <svg id="scoreboard-vs-icon" viewBox="0 0 100 100" width="100%" heigth="100%">
+                                                                        <line x1="-3" x2="100" y1="1" y2="100" stroke="#555" stroke-width="5"></line>
+                                                                        <line x1="-3" x2="100" y1="100" y2="1" stroke="#555" stroke-width="5"></line>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"></span>
+                                                            <span class="placar-box__valor placar__equipes--visitante">2</span>
+                                                        </div>
+    
+                                                        <!-- Escudo Visitante -->
+                                                        <div class="placar__equipes placar__equipes--visitante" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
+                                                            <img class="equipes__escudo equipes__escudo--visitante" src="https://s.glbimg.com/es/sde/f/organizacoes/2019/09/09/Athletico-PR.svg" itemprop="image" alt="Athletico City">
+                                                            <span class="equipes__sigla">ACT</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                            </ul>
                         </section>
                 </article>
              </section>

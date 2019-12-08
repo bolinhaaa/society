@@ -304,8 +304,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             }
 
 .lista-jogos__navegacao {
-    border-bottom: 1px solid #;
-    border-top: 1px solid green;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid #ddd;
     color: #111;
     display: flex;
     font-family: "Century Gothic", sans-serif;
@@ -349,3 +349,141 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .lista-jogos__navegacao--setas:last-of-type {
         text-align: right;
     }
+
+
+/* ------------------------------------------ PROXIMOS JOGOS ---------------------------------------------------- */
+ol, ul {
+    list-style-type: none;
+}
+
+.lista-jogos {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+    height: 90%;
+}
+
+    .lista-jogos__jogo {
+        border-bottom: 1px solid #e3e3e3;
+        display: block;
+    }
+
+        .jogo {
+            height: 109px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+            .jogo__informacoes {
+                color: #555;
+                font-family: "Century Gothic",sans-serif;
+                font-size: 0.6875em;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -.3px;
+                text-transform: uppercase;
+            }
+
+                .jogo__informacoes--local {
+                    font-family: "Century Gothic",sans-serif;
+                    font-weight: normal;
+                }
+
+
+/* ------------------------------------------ PLACAR DOS JOGOS ---------------------------------------------------- */
+.jogo__transmissao--link {
+    width: 100%;
+}
+
+.placar {
+    align-items: center;
+    color: #333;
+    display: flex;
+    height: 4em;
+    justify-content: center;
+}
+
+        .placar__equipes {
+            align-items: center;
+            color: #333;
+            display: flex;
+            flex-grow: 1;
+            font-family: "Century Gothic",sans-serif;
+            font-size: 1.125em;
+            font-stretch: 100%;
+            font-style: normal;
+            font-weight: 100;
+            height: 40px;
+            line-height: 1em;
+            vertical-align: middle;
+            width: 35%;
+        }
+
+        .placar__equipes--mandante {
+            text-align: right;
+            justify-content: flex-end;
+        }
+
+            .equipes__escudo--mandante {
+                margin-left: 8px;
+            }
+            
+
+                .equipes__escudo {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                    .equipes__escudo--visitante {
+                        margin-right: 8px;
+                    }
+
+
+.placar-box {
+    align-items: center;
+    color: #111;
+    display: flex;
+    flex-grow: 2;
+    height: 40px;
+    justify-content: center;
+    width: 30%;
+}
+
+    .placar-box__valor {
+        font-size: 1.3125em;
+        font-family: "Century Gothic",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        vertical-align: middle;
+    }
+
+        .placar-box__penaltis-mandante {
+            margin-left: 5px;
+        }
+        .placar-box__penaltis-visitante {
+            margin-right: 5px;
+        }
+
+            .placar-box__penaltis {
+                font-size: .7em;
+            }
+
+                .placar-box__versus {
+                    display: flex;
+                    height: 8px;
+                    margin: 0 5px;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    width: 9px;
+                }
+
+.placar__equipes--visitante {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.equipes__escudo--visitante {
+    margin-right: 8px;
+}
