@@ -225,17 +225,17 @@
                             </header>
 
                             <nav class="lista-jogos__navegacao">
-                                <span class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-esquerda">
+                                <span id="jogo-anterior" class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-esquerda">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
                                         <path d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"></path>
                                     </svg>
                                 </span>
 
-                                <span class="lista-jogos__navegacao--rodada">
+                                <span id="rodada-escolhida" class="lista-jogos__navegacao--rodada">
                                     1º RODADA
                                 </span>
 
-                                <span class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-direita lista-jogos__navegacao--setas-ativa"> 
+                                <span id="proximo-jogo" class="lista-jogos__navegacao--setas lista-jogos__navegacao--setas-direita lista-jogos__navegacao--setas-ativa"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
                                         <path d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"></path>
                                     </svg>
@@ -255,7 +255,7 @@
                                                 <div class="placar">
                                                     <!-- Escudo Mandante-->
                                                     <div class="placar__equipes placar__equipes--mandante" itemprop="performer" itemscope="" itemtype="http://schema.org/SportsTeam">
-                                                        <span class="esquipes__sigla" title="Racing FC">RAC</span>
+                                                        <span id="texto01" class="esquipes__sigla" title="Racing FC">RAC</span>
                                                         <img class="equipes__escudo equipes__escudo--mandante" src="./img/racing.jpeg" itemprop="image" alt="Racing Fc" >
                                                     </div>
 
@@ -603,4 +603,5 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/comportamento.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tabela.js"></script>
 </html>

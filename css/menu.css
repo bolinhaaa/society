@@ -53,7 +53,7 @@ body {
 
         .nav-item a {
             display: block;
-            padding: 15px 20px;
+            padding: 8px 20px;
             text-decoration: none;
             color: #000;
             background: #ff0;
@@ -87,7 +87,7 @@ body {
 
 .nav-active {
     display: block !important;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .nav-mobile-open {
