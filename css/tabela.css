@@ -487,3 +487,78 @@ ol, ul {
 .equipes__escudo--visitante {
     margin-right: 8px;
 }
+
+@media(max-width: 768px) {
+    #classificacao__wrapper {
+        flex-direction: column;
+    }
+
+   
+        .tabela__futebol--listinhas .tabela {
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+            .tabela__futebol--listinhas {
+                flex-direction: column;
+            }
+            
+                .tabela__equipes {
+                    width: 20%;
+                }
+
+                    .tabela__head {
+                        border-right: 1px solid #999;
+                    }
+
+                        .classificao__tabela--linha {
+                            border-right: 1px solid #999;
+                        }
+
+                            .classificacao__equipes--posicao {
+                                font-size: 14px;
+                                padding-top: 3px;
+                            }
+
+                                .classificacao__equipes--nome {
+                                    display: none;
+                                }
+
+                                    .classificacao__equipes--sigla {
+                                        display: inline-block;
+                                        font-size: 15px;
+                                    }
+
+                                        .tabela__pontos {
+                                            width: 80%;
+                                        }
+
+                                            .tabela__pontos .tabela__head--coluna {
+                                                width: 10%;
+                                            }
+
+                                                .classificacao__pontos {
+                                                    padding-top: 4px;
+                                                }
+
+/* --------------------------------------------------------------- TABELA DE JOGOS ----------------------------------------------------------- */
+
+.tabela__listinhas {
+    width: 100%;
+}
+
+    .tabela__lista--jogos {
+        order: 4;
+        border: none !important;
+        padding-left: 0;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .lista-jogos__header--titulo-listinha {
+        display: block;
+        font-size: 17px;
+    }
+
+}
